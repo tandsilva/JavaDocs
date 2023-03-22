@@ -44,6 +44,16 @@ public class Program {
         Acount acc1 = new Acount(1001,"Alex",1000.0);
         acc1.withdraw(200.0);
         System.out.println(acc1.getBalance());
+        //____________________________UPCASTING_____________________________
+
+        Acount acc2 = new SavingsAcount(1002,"Bacana",1000.0,0.01);
+        acc2.withdraw(200.0);
+        System.out.println(acc2.getBalance());
+
+//um modo diferente de usar o super
+        Acount acc3 = new BusinessAcount(1003,"Thiago",1000.0,500.0);
+        acc3.withdraw(200.0);
+        System.out.println(acc3.getBalance());
  }
 
     }

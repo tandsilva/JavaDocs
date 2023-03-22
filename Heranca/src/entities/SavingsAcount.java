@@ -24,6 +24,7 @@ public class SavingsAcount extends  Acount{
     }
 
     //usa o override para indicar que eh um metodo da super classe
+    //ou seja em contas poupancas nao sera cobrada uma taxa
     @Override
     public void withdraw(double amount){
         balance -=amount;
