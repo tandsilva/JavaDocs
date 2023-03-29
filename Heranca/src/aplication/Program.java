@@ -41,19 +41,27 @@ public class Program {
 //
 //        }
 //
-        Acount acc1 = new Acount(1001,"Alex",1000.0);
-        acc1.withdraw(200.0);
-        System.out.println(acc1.getBalance());
-        //____________________________UPCASTING_____________________________
+      /*      Acount acc1 = new Acount(1001,"Alex",1000.0);
+            acc1.withdraw(200.0);
+            System.out.println(acc1.getBalance());
+            //____________________________UPCASTING_____________________________
 
-        Acount acc2 = new SavingsAcount(1002,"Bacana",1000.0,0.01);
-        acc2.withdraw(200.0);
-        System.out.println(acc2.getBalance());
+            Acount acc2 = new SavingsAcount(1002,"Bacana",1000.0,0.01);
+            acc2.withdraw(200.0);
+            System.out.println(acc2.getBalance());
 
-//um modo diferente de usar o super
-        Acount acc3 = new BusinessAcount(1003,"Thiago",1000.0,500.0);
-        acc3.withdraw(200.0);
-        System.out.println(acc3.getBalance());
- }
+    //um modo diferente de usar o super
+            Acount acc3 = new BusinessAcount(1003,"Thiago",1000.0,500.0);
+            acc3.withdraw(200.0);
+            System.out.println(acc3.getBalance());*/
+        //instanciou o objeto e chamou metodo wit e chamou o outro metodo para ver o saldo
+         Acount x = new Acount(1020,"Thiago",1000.0);
+        Acount y = new SavingsAcount(1023,"Kelle",1000.0,0.01);
+        x.withdraw(50.0);
+        y.withdraw(50.0);
+        System.out.println(x.getBalance());
+        System.out.println(y.getBalance());
+
+    }
 
     }
